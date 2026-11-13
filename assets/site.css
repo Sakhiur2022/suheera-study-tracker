@@ -1,0 +1,200 @@
+/* সাইটের সাধারণ স্টাইল: হোম, হাব পেজ ও রুটিন পেজ */
+:root {
+  --paper: #f6f8fb;
+  --surface: #ffffff;
+  --ink: #17233f;
+  --ink-soft: #55607a;
+  --line: #d5dbe7;
+  --blue: #2a56d6;
+  --blue-soft: #e4ebfc;
+  --focus: #e08a00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1626;
+    --surface: #172036;
+    --ink: #e7ecf8;
+    --ink-soft: #9fabc6;
+    --line: #2b3652;
+    --blue: #7fa2ff;
+    --blue-soft: #1f2d52;
+    --focus: #ffb347;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: "Hind Siliguri", "Nirmala UI", "Noto Sans Bengali", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+}
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+/* breadcrumb */
+.crumbs { max-width: 1180px; margin: 0 auto; padding: 14px 20px 0; font-size: 0.95rem; }
+.crumbs ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 2px 8px; }
+.crumbs li + li::before { content: "›"; margin-right: 8px; color: var(--ink-soft); }
+.crumbs a { color: var(--blue); text-decoration: none; font-weight: 500; }
+.crumbs a:hover { text-decoration: underline; }
+.crumbs [aria-current] { color: var(--ink-soft); }
+
+.page-head { max-width: 1180px; margin: 0 auto; padding: 36px 20px 8px; }
+.page-head h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.page-head .sub { margin: 6px 0 0; color: var(--ink-soft); font-size: 1.1rem; }
+
+main { max-width: 1180px; margin: 0 auto; padding: 20px 20px 56px; display: grid; gap: 24px; }
+
+/* hub boxes */
+.boxes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 24px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 200px;
+  height: 100%;
+  padding: 24px 24px 20px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  box-shadow: 6px 6px 0 var(--blue);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.box:hover, .box:focus-visible { transform: translate(3px, 3px); box-shadow: 3px 3px 0 var(--blue); }
+.box-title { font-size: 1.7rem; font-weight: 700; line-height: 1.25; }
+.box-desc { color: var(--ink-soft); font-size: 1.02rem; }
+.box-meta {
+  margin-top: auto;
+  align-self: flex-start;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 1px 10px;
+  border-radius: 3px;
+}
+
+/* panels */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--blue);
+  padding: 20px 22px 22px;
+  border-radius: 4px;
+}
+.panel h2 { margin: 0 0 12px; font-size: 1.4rem; font-weight: 600; }
+
+/* routine meta */
+.meta { margin: 16px 0 0; display: grid; gap: 10px; max-width: 80ch; }
+.meta div { display: grid; grid-template-columns: 11rem 1fr; gap: 4px 16px; }
+.meta dt { color: var(--ink-soft); font-weight: 500; }
+.meta dd { margin: 0; }
+
+/* routine table */
+table.routine { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
+.routine th, .routine td {
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.routine thead th {
+  border-bottom: 2px solid var(--ink);
+  font-weight: 600;
+  background: var(--surface);
+}
+.routine .th-sub { display: block; font-weight: 400; font-size: 0.88rem; color: var(--ink-soft); }
+.routine th.day { white-space: nowrap; font-weight: 600; }
+.routine .d2 { color: var(--ink-soft); font-weight: 400; font-size: 0.92rem; }
+.routine td strong { font-weight: 600; }
+.routine code {
+  background: var(--blue-soft);
+  color: var(--blue);
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 0.92em;
+}
+.routine tr.today { background: var(--blue-soft); }
+.routine tr.today th.day { box-shadow: inset 4px 0 0 var(--blue); }
+.today-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 8px;
+  background: var(--blue);
+  color: var(--surface);
+  border-radius: 3px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.today-tag[hidden] { display: none; }
+
+.tips { margin: 0; padding-left: 22px; }
+.tips li { margin-bottom: 6px; max-width: 78ch; }
+
+@media (max-width: 900px) {
+  .meta div { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  body { background-size: 22px 22px; font-size: 15px; }
+  .crumbs { padding: 12px 14px 0; }
+  .page-head { padding: 24px 14px 4px; }
+  main { padding: 12px 12px 40px; gap: 16px; }
+  .panel { padding: 14px 12px 16px; border-left-width: 4px; }
+  .box { min-height: 0; padding: 18px 16px 16px; }
+  .box-title { font-size: 1.45rem; }
+
+  /* routine: দিনভিত্তিক কার্ড */
+  table.routine, .routine tbody, .routine tr, .routine td, .routine th { display: block; width: 100%; }
+  .routine thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .routine tbody tr {
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--surface);
+  }
+  .routine tbody tr.today { background: var(--blue-soft); border-color: var(--blue); }
+  .routine th, .routine td { border: 0; padding: 0; }
+  .routine th.day { font-size: 1.1rem; margin-bottom: 8px; white-space: normal; }
+  .routine tr.today th.day { box-shadow: none; }
+  .routine td { padding: 8px 0; border-top: 1px solid var(--line); }
+  .routine td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .box { transition: none; }
+}
