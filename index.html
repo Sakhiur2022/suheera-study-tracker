@@ -3,79 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>প্যারাবোলা সমস্যা ট্র্যাকার</title>
+  <title>এইচএসসি প্রস্তুতি</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <header class="top">
-    <h1>প্যারাবোলা সমস্যা ট্র্যাকার</h1>
-    <p class="sub">উচ্চতর গণিত ২য় পত্র · প্রশ্নমালা ৬.১</p>
-    <div class="progress" aria-live="polite">
-      <div class="bar"><span id="bar-fill"></span></div>
-      <p id="progress-text"></p>
-    </div>
+<nav class="crumbs" aria-label="পথ"><ol><li aria-current="page">হোম</li></ol></nav>
+  <header class="page-head">
+    <h1>এইচএসসি প্রস্তুতি</h1>
+    <p class="sub">কী করবে বেছে নাও।</p>
   </header>
-
   <main>
-    <section class="panel" aria-labelledby="sum-h">
-      <h2 id="sum-h">ক্লাস্টার ও কঠিনতা</h2>
-      <p class="hint">সারিতে ক্লিক করলে নিচের তালিকা সেই ক্লাস্টারে ফিল্টার হবে।</p>
-      <div class="scroll">
-        <table id="matrix">
-          <thead>
-            <tr><th>কোড</th><th>ধরন</th><th>সহজ</th><th>মাঝারি</th><th>কঠিন</th><th>মোট</th></tr>
-          </thead>
-          <tbody></tbody>
-          <tfoot></tfoot>
-        </table>
-      </div>
-    </section>
-
-    <section class="panel" aria-labelledby="list-h">
-      <h2 id="list-h">সমস্যা তালিকা</h2>
-      <form class="filters" id="filters" onsubmit="return false">
-        <label>খুঁজুন<input type="search" id="f-q" placeholder="প্রশ্ন নং বা বিবরণ"></label>
-        <label>ক্লাস্টার<select id="f-cluster"></select></label>
-        <label>কঠিনতা<select id="f-diff"></select></label>
-        <label>গুরুত্ব<select id="f-imp"></select></label>
-        <label>অগ্রাধিকার<select id="f-pri"></select></label>
-        <label>অবস্থা<select id="f-status"></select></label>
-        <label>সাজানো<select id="f-sort">
-          <option value="order">প্রশ্নের ক্রম</option>
-          <option value="score">অগ্রাধিকার স্কোর (বেশি আগে)</option>
-        </select></label>
-        <button type="button" id="f-reset">ফিল্টার মুছুন</button>
-      </form>
-      <p id="count" class="hint" aria-live="polite"></p>
-      <div class="scroll">
-        <table id="problems">
-          <thead>
-            <tr>
-              <th>প্রশ্ন</th><th>বিবরণ</th><th>ক্লাস্টার</th><th>কঠিনতা</th>
-              <th>রেফারেন্স</th><th>গুরুত্ব</th><th>অগ্রাধিকার</th><th>কৌশল</th><th>অবস্থা</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <p id="empty" class="empty" hidden>এই ফিল্টারে কোনো সমস্যা নেই। ফিল্টার মুছে আবার দেখুন।</p>
-    </section>
-
-    <section class="panel notes">
-      <h2>হিসাবের নিয়ম</h2>
-      <ul>
-        <li>রেফারেন্স = প্রশ্নের পাশে দেওয়া বোর্ড ও ভর্তি পরীক্ষার উল্লেখের সংখ্যা।</li>
-        <li>গুরুত্ব: রেফারেন্স ৫ বা বেশি হলে অতি গুরুত্বপূর্ণ, ২–৪ হলে গুরুত্বপূর্ণ, ০–১ হলে কম গুরুত্ব।</li>
-        <li>স্কোর = রেফারেন্স + (বুয়েট/চুয়েট/কুয়েট/SUST-এর উল্লেখ থাকলে ২)। স্কোর ৫ বা বেশি হলে ১ম, ২–৪ হলে ২য়, নইলে ৩য় অগ্রাধিকার।</li>
-        <li>কঠিনতা আমার নিজস্ব বিচার। অবস্থা এই ব্রাউজারে সংরক্ষিত থাকে।</li>
-        <li>2(i) ও 2(iv) হুবহু একই সমস্যা। উপবৃত্তের অংশ ফাইলে অসম্পূর্ণ, তাই তালিকায় নেই।</li>
-      </ul>
-    </section>
+  <ul class="boxes">
+    <li><a class="box" href="practice/index.html">
+      <span class="box-title">অনুশীলন</span>
+      <span class="box-desc">বিষয় ধরে সমস্যা সমাধান ও অগ্রগতি ট্র্যাক করো</span>
+      <span class="box-meta">১টি বিষয়</span>
+    </a></li>
+    <li><a class="box" href="study/index.html">
+      <span class="box-title">পড়ার রুটিন</span>
+      <span class="box-desc">পরীক্ষা ধরে দৈনিক পড়ার পরিকল্পনা</span>
+      <span class="box-meta">১টি পরীক্ষা</span>
+    </a></li>
+  </ul>
   </main>
-
-  <script src="main.js"></script>
 </body>
 </html>
