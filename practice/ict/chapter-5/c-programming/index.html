@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C প্রোগ্রাম প্র্যাকটিস</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="crumbs" aria-label="পথ"><ol>
+    <li><a href="../../../../index.html">হোম</a></li>
+    <li><a href="../../../index.html">অনুশীলন</a></li>
+    <li><a href="../../index.html">আইসিটি</a></li>
+    <li><a href="../index.html">৫ম অধ্যায়</a></li>
+    <li aria-current="page">C প্রোগ্রাম প্র্যাকটিস</li>
+  </ol></nav>
+
+  <header class="top">
+    <h1>C প্রোগ্রাম প্র্যাকটিস</h1>
+    <p class="sub">আইসিটি · ৫ম অধ্যায় · ব্যবহারিক প্রোগ্রাম ও উদ্দীপক</p>
+    <div class="progress" aria-live="polite">
+      <div class="bar"><span id="bar-fill"></span></div>
+      <p id="progress-text"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" aria-labelledby="sum-h">
+      <h2 id="sum-h">ক্লাস্টার ও কঠিনতা</h2>
+      <p class="hint">সারিতে ক্লিক করলে নিচের তালিকা সেই ক্লাস্টারে ফিল্টার হবে।</p>
+      <div class="scroll">
+        <table id="matrix">
+          <thead>
+            <tr><th>কোড</th><th>ধরন</th><th>সহজ</th><th>মাঝারি</th><th>কঠিন</th><th>মোট</th><th>সাধারণ গুরুত্ব</th></tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="cross-h">
+      <h2 id="cross-h">কঠিনতা ও পরীক্ষায় গুরুত্ব</h2>
+      <div class="scroll">
+        <table id="cross"><thead></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="list-h">
+      <h2 id="list-h">সমস্যা তালিকা</h2>
+      <form class="filters" id="filters" onsubmit="return false">
+        <label>খুঁজুন<input type="search" id="f-q" placeholder="কোড, শিরোনাম বা বিবরণ"></label>
+        <label>ক্লাস্টার<select id="f-cluster"></select></label>
+        <label>কঠিনতা<select id="f-diff"></select></label>
+        <label>গুরুত্ব<select id="f-imp"></select></label>
+        <label>অংশ<select id="f-part"></select></label>
+        <label>অবস্থা<select id="f-status"></select></label>
+        <label>সাজানো<select id="f-sort">
+          <option value="order">বইয়ের ক্রম</option>
+          <option value="imp">গুরুত্ব (বেশি আগে)</option>
+        </select></label>
+        <button type="button" id="f-reset">ফিল্টার মুছুন</button>
+      </form>
+      <p id="count" class="hint" aria-live="polite"></p>
+      <div class="scroll">
+        <table id="problems">
+          <thead>
+            <tr>
+              <th>কোড</th><th>সমস্যা</th><th>ক্লাস্টার</th><th>প্যাটার্ন</th>
+              <th>কঠিনতা</th><th>গুরুত্ব</th><th>অবস্থা</th><th><span class="sr">কোড দেখো</span></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <p id="empty" class="empty" hidden>এই ফিল্টারে কোনো সমস্যা নেই। ফিল্টার মুছে আবার দেখুন।</p>
+    </section>
+
+    <section class="panel" aria-labelledby="ans-h">
+      <h2 id="ans-h">উদ্দীপকের উত্তর (অংশ ৫)</h2>
+      <div class="scroll"><table class="plain"><tbody id="answers"></tbody></table></div>
+    </section>
+
+    <section class="panel" aria-labelledby="iss-h">
+      <h2 id="iss-h">বইয়ের কোডের ত্রুটি ও সমাধান</h2>
+      <div class="scroll">
+        <table class="plain">
+          <thead><tr><th>কোড</th><th>সমস্যা</th><th>সমাধান</th></tr></thead>
+          <tbody id="issues"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="pat-h">
+      <h2 id="pat-h">অ্যালগরিদম প্যাটার্ন</h2>
+      <div class="scroll">
+        <table class="plain">
+          <thead><tr><th>প্যাটার্ন</th><th>সমস্যা</th><th>ধারণা</th></tr></thead>
+          <tbody id="patterns"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel theory" aria-labelledby="th-h">
+      <h2 id="th-h">বইয়ের তত্ত্ব</h2>
+      <div id="theory"></div>
+    </section>
+
+    <section class="panel notes">
+      <h2>জেনে রাখো</h2>
+      <ul>
+        <li>পরীক্ষায় গুরুত্ব আমার নিজস্ব বিচার, এইচএসসি আইসিটি (এনসিটিবি) ব্যবহারিক প্রোগ্রাম ও সৃজনশীল প্রশ্নের উদ্দীপক-কোডের ধরন দেখে করা। বইয়ে এটি লেখা নেই।</li>
+        <li>বইয়ের P8, P17, P18 ও P42-এর পরের নম্বরগুলো ফাইলে ছিল না। ক্যালকুলেটর, স্বরবর্ণ ও 131+... প্রোগ্রামে নম্বর দেওয়া নেই।</li>
+        <li>⚠ চিহ্নিত সমস্যার বইয়ের কোডে ত্রুটি বা অসংগতি আছে। বিস্তারিত ও সমাধান ওপরের ছকে দেখো।</li>
+        <li>অবস্থা এই ব্রাউজারে সংরক্ষিত থাকে।</li>
+      </ul>
+    </section>
+  </main>
+
+  <dialog id="code-modal" aria-labelledby="m-title">
+    <div class="m-head">
+      <div class="m-headtext">
+        <h2 id="m-title"></h2>
+        <p id="m-meta" class="m-metaline"></p>
+      </div>
+      <button type="button" id="m-close" class="m-close" aria-label="বন্ধ করো">✕</button>
+    </div>
+    <div class="m-body">
+      <div class="d-block"><h3>সমস্যা</h3><p id="m-stmt"></p></div>
+      <div class="d-block">
+        <div class="code-head"><h3>সমাধান কোড</h3><button type="button" id="m-copy" class="copy">কোড কপি করো</button></div>
+        <pre><code id="m-code"></code></pre>
+      </div>
+      <div class="d-block" id="m-note"></div>
+      <div class="d-block warn" id="m-issue"></div>
+    </div>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>
