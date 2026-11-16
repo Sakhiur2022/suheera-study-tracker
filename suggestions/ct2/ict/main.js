@@ -26,6 +26,7 @@
   window.addEventListener("hashchange", openFromHash);
   openFromHash();
 
+<<<<<<< HEAD
   // সূচির পুরো সারি ক্লিক করা যায়
   document.querySelectorAll("table.toc tbody tr").forEach((tr) => {
     tr.addEventListener("click", (e) => {
@@ -35,6 +36,8 @@
     });
   });
 
+=======
+>>>>>>> 5ba30b3edddadddba3aa425fa16c7953f28973f3
   // কোড কপি
   document.addEventListener("click", (e) => {
     const b = e.target.closest("button.copy");
