@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>আইসিটি · ২য় সিটি সাজেশন</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/site.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<nav class="crumbs" aria-label="পথ"><ol><li><a href="../../../index.html">হোম</a></li><li><a href="../../index.html">সাজেশন</a></li><li><a href="../index.html">২য় সিটি</a></li><li aria-current="page">আইসিটি</li></ol></nav>
+  <header class="page-head">
+    <h1>আইসিটি সাজেশন</h1>
+    <p class="sub">২য় সিটি · ৫ম অধ্যায় (প্রোগ্রামিং ভাষা) · ১০টি প্রশ্ন, প্রতিটির অ্যালগরিদম, ফ্লোচার্ট ও C প্রোগ্রামসহ সমাধান</p>
+  </header>
+  <main>
+    <section class="panel" aria-labelledby="toc-h">
+      <h2 id="toc-h">প্রশ্ন সূচি</h2>
+      <div class="scroll"><table class="toc">
+        <thead><tr><th scope="col">প্রশ্ন</th><th scope="col">বিষয়</th><th scope="col">কাঠামো</th></tr></thead>
+        <tbody><tr><th scope="row"><a class="cell" href="#q1">প্রশ্ন ১</a></th><td><a class="cell" href="#q1">ফারেনহাইট থেকে সেলসিয়াস</a></td><td><a class="cell" href="#q1"><span class=chip>সরল ক্রম</span><span class=chip>স্টেটমেন্টের ধরন</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q2">প্রশ্ন ২</a></th><td><a class="cell" href="#q2">ত্রিভুজের ক্ষেত্রফল</a></td><td><a class="cell" href="#q2"><span class=chip>সরল ক্রম</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q3">প্রশ্ন ৩</a></th><td><a class="cell" href="#q3">বর্গের ধারা (do-while)</a></td><td><a class="cell" href="#q3"><span class=chip>do-while লুপ</span><span class=chip>ধারা</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q4">প্রশ্ন ৪</a></th><td><a class="cell" href="#q4">তিন সংখ্যার মধ্যে বৃহত্তম</a></td><td><a class="cell" href="#q4"><span class=chip>শর্ত (if)</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q5">প্রশ্ন ৫</a></th><td><a class="cell" href="#q5">১ থেকে n পর্যন্ত যোগফল</a></td><td><a class="cell" href="#q5"><span class=chip>for লুপ</span><span class=chip>ধারা</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q6">প্রশ্ন ৬</a></th><td><a class="cell" href="#q6">জোড় সংখ্যার যোগফল</a></td><td><a class="cell" href="#q6"><span class=chip>for লুপ</span><span class=chip>ধারা</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q7">প্রশ্ন ৭</a></th><td><a class="cell" href="#q7">ফ্যাক্টরিয়াল নির্ণয়</a></td><td><a class="cell" href="#q7"><span class=chip>for লুপ</span><span class=chip>গুণফল</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q8">প্রশ্ন ৮</a></th><td><a class="cell" href="#q8">অ্যারে ব্যবহার করে দুটি সংখ্যার গড়</a></td><td><a class="cell" href="#q8"><span class=chip>অ্যারে</span><span class=chip>for লুপ</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q9">প্রশ্ন ৯</a></th><td><a class="cell" href="#q9">বৃত্তের ক্ষেত্রফল</a></td><td><a class="cell" href="#q9"><span class=chip>সরল ক্রম</span></a></td></tr><tr><th scope="row"><a class="cell" href="#q10">প্রশ্ন ১০</a></th><td><a class="cell" href="#q10">অধিবর্ষ (Leap Year) নির্ণয়</a></td><td><a class="cell" href="#q10"><span class=chip>শর্ত (if-else if)</span></a></td></tr></tbody>
+      </table></div>
+    </section>
+
+    <section class="panel" aria-labelledby="how-h">
+      <h2 id="how-h">উত্তর লেখার কৌশল</h2>
+      <ul class="tips">
+        <li>প্রতিটি প্রশ্নের উত্তর তিন ধাপে লেখো: <strong>অ্যালগরিদম → ফ্লোচার্ট → C প্রোগ্রাম</strong>। তিনটির যুক্তি একই থাকতে হবে।</li>
+        <li>এই ১০টি প্রশ্নে মাত্র তিন ধরনের কাঠামো আছে: <strong>সরল ক্রম</strong> (১, ২, ৯), <strong>শর্ত</strong> (৪, ১০) ও <strong>লুপ</strong> (৩, ৫, ৬, ৭, ৮)। লুপের একটি কাঠামো বুঝলে পাঁচটি প্রশ্নই সহজ হয়ে যায়।</li>
+        <li>প্রথমে নিজে লিখে চেষ্টা করো, তারপর “সমাধান দেখো” চেপে মিলিয়ে নাও।</li>
+      </ul>
+      <h3 class="sub-h">ফ্লোচার্টের চিহ্ন</h3>
+      <ul class="legend"><li><svg class="fc-svg lg" viewBox="0 0 114 44" aria-hidden="true"><rect class="fc-shape fc-term" x="2" y="2" width="110" height="40" rx="20"/><text class="fc-t" x="57" y="22" dy=".35em"></text></svg><span><strong>ডিম্বাকৃতি</strong><br>শুরু / শেষ</span></li><li><svg class="fc-svg lg" viewBox="0 0 114 44" aria-hidden="true"><polygon class="fc-shape fc-io" points="18,2 112,2 96,42 2,42"/><text class="fc-t" x="57" y="22" dy=".35em"></text></svg><span><strong>সামান্তরিক</strong><br>ইনপুট / আউটপুট</span></li><li><svg class="fc-svg lg" viewBox="0 0 114 44" aria-hidden="true"><rect class="fc-shape fc-proc" x="2" y="2" width="110" height="40"/><text class="fc-t" x="57" y="22" dy=".35em"></text></svg><span><strong>আয়তক্ষেত্র</strong><br>গণনা / প্রক্রিয়া</span></li><li><svg class="fc-svg lg" viewBox="0 0 114 62" aria-hidden="true"><polygon class="fc-shape fc-dec" points="57,2 112,31 57,60 2,31"/><text class="fc-t" x="57" y="31" dy=".35em"></text></svg><span><strong>রম্বস</strong><br>সিদ্ধান্ত (শর্ত)</span></li><li><svg class="fc-svg lg" viewBox="0 0 114 44" aria-hidden="true"><defs><marker id="ah-lg" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="6,22 106,22" marker-end="url(#ah-lg)"/></svg><span><strong>তীর</strong><br>প্রবাহের দিক</span></li></ul>
+    </section>
+
+    <div class="toolbar">
+      <p id="open-count" class="hint" aria-live="polite"></p>
+      <button type="button" id="toggle-all" class="btn">সব সমাধান খুলো</button>
+    </div>
+
+    <article class="q" id="q1" aria-labelledby="q1-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">১</span>
+        <div>
+          <h3 id="q1-h"><span class="sr">প্রশ্ন ১: </span>ফারেনহাইট থেকে সেলসিয়াস</h3>
+          <div class="chips"><span class="chip">সরল ক্রম</span><span class="chip">স্টেটমেন্টের ধরন</span></div>
+        </div>
+      </header>
+      <p class="q-text">ফারেনহাইট তাপমাত্রাকে সেলসিয়াস তাপমাত্রায় রূপান্তরের অ্যালগরিদম, ফ্লোচার্ট ও C প্রোগ্রাম ভাষায় রচনা কর এবং কী কী ধরনের statement ব্যবহার হয়েছে তা উল্লেখ কর।</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>ফারেনহাইট তাপমাত্রা F ইনপুট নাও।</li><li>সূত্র অনুযায়ী C = (F − 32) × 5 ÷ 9 গণনা করো।</li><li>সেলসিয়াস তাপমাত্রা C প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 370" style="max-width:350px;min-width:297.5px" role="img" aria-label="ফারেনহাইট থেকে সেলসিয়াসের ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q1" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q1)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q1)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q1)"/><polyline class="fc-line" points="175,282 175,316" marker-end="url(#ah-q1)"/><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট F</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">C = (F - 32) * 5 / 9</text><polygon class="fc-shape fc-io" points="76,240 290,240 274,282 60,282"/><text class="fc-t" x="175" y="261" dy=".35em">প্রিন্ট C</text><rect class="fc-shape fc-term" x="110" y="316" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="335" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q1">কপি</button></div><pre><code id="code-q1"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">float</span> f, c;                        <span class="t-cm">// ঘোষণা (declaration)</span>
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Fahrenheit: &quot;</span>);            <span class="t-cm">// আউটপুট</span>
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%f&quot;</span>, &amp;f);                   <span class="t-cm">// ইনপুট</span>
+
+    c = (f - <span class="t-num">32</span>) * <span class="t-num">5.0</span> / <span class="t-num">9.0</span>;          <span class="t-cm">// অ্যাসাইনমেন্ট</span>
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Celsius = %.2f\n&quot;</span>, c);     <span class="t-cm">// আউটপুট</span>
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Fahrenheit: 98.6
+Celsius = 37.00</code></pre></section><section class="part"><div class="code-head"><h4>ব্যবহৃত statement-এর ধরন</h4></div>
+<div class="scroll"><table class="stmt"><thead><tr><th>ধরন</th><th>প্রোগ্রামের অংশ</th><th>কাজ</th></tr></thead><tbody>
+<tr><td data-label="ধরন">প্রিপ্রসেসর নির্দেশ</td><td data-label="অংশ"><code>#include &lt;stdio.h&gt;</code></td><td data-label="কাজ">ইনপুট-আউটপুটের হেডার ফাইল যুক্ত করে (এটি নির্দেশ, আসল statement নয়)</td></tr>
+<tr><td data-label="ধরন">ঘোষণা (Declaration) statement</td><td data-label="অংশ"><code>float f, c;</code></td><td data-label="কাজ">চলকের নাম ও ডেটা টাইপ নির্ধারণ করে</td></tr>
+<tr><td data-label="ধরন">আউটপুট (Output) statement</td><td data-label="অংশ"><code>printf(&quot;Celsius = %.2f\n&quot;, c);</code></td><td data-label="কাজ">পর্দায় ফলাফল দেখায়</td></tr>
+<tr><td data-label="ধরন">ইনপুট (Input) statement</td><td data-label="অংশ"><code>scanf(&quot;%f&quot;, &amp;f);</code></td><td data-label="কাজ">কিবোর্ড থেকে মান নিয়ে f-এ রাখে</td></tr>
+<tr><td data-label="ধরন">অ্যাসাইনমেন্ট (Assignment) statement</td><td data-label="অংশ"><code>c = (f - 32) * 5.0 / 9.0;</code></td><td data-label="কাজ">গণনা করে ফল c-তে রাখে</td></tr>
+<tr><td data-label="ধরন">রিটার্ন (Return) statement</td><td data-label="অংশ"><code>return 0;</code></td><td data-label="কাজ">main ফাংশন শেষ করে প্রোগ্রাম সফলভাবে সমাপ্ত করে</td></tr>
+</tbody></table></div></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>সংক্ষেপে মনে রাখো: <strong>ঘোষণা → ইনপুট → অ্যাসাইনমেন্ট → আউটপুট → রিটার্ন</strong>।</li><li>সতর্কতা: <code>5 / 9</code> লিখলে দুটিই পূর্ণসংখ্যা হওয়ায় ফল 0 আসে। তাই <code>5.0 / 9.0</code> লিখতে হয়।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q2" aria-labelledby="q2-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">২</span>
+        <div>
+          <h3 id="q2-h"><span class="sr">প্রশ্ন ২: </span>ত্রিভুজের ক্ষেত্রফল</h3>
+          <div class="chips"><span class="chip">সরল ক্রম</span></div>
+        </div>
+      </header>
+      <p class="q-text">ত্রিভুজের ক্ষেত্রফল নির্ণয়ের ফ্লোচার্ট, অ্যালগরিদম ও প্রোগ্রাম লিখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>ত্রিভুজের ভূমি (base) ও উচ্চতা (height) ইনপুট নাও।</li><li>area = ½ × base × height গণনা করো।</li><li>area প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 370" style="max-width:350px;min-width:297.5px" role="img" aria-label="ত্রিভুজের ক্ষেত্রফলের ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q2" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q2)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q2)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q2)"/><polyline class="fc-line" points="175,282 175,316" marker-end="url(#ah-q2)"/><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট base, height</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">area = 0.5 * base * height</text><polygon class="fc-shape fc-io" points="76,240 290,240 274,282 60,282"/><text class="fc-t" x="175" y="261" dy=".35em">প্রিন্ট area</text><rect class="fc-shape fc-term" x="110" y="316" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="335" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q2">কপি</button></div><pre><code id="code-q2"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">float</span> base, height, area;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Base: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%f&quot;</span>, &amp;base);
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Height: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%f&quot;</span>, &amp;height);
+
+    area = <span class="t-num">0.5</span> * base * height;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Area = %.2f\n&quot;</span>, area);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Base: 10
+Height: 5
+Area = 25.00</code></pre></section><section class="part"><div class="code-head"><h4>বিকল্প: তিন বাহু জানা থাকলে (হেরনের সূত্র)</h4><button type="button" class="copy" data-target="code-q2b">কপি</button></div><pre><code id="code-q2b"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+<span class="t-pp">#include &lt;math.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">float</span> a, b, c, s, area;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Three sides: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%f %f %f&quot;</span>, &amp;a, &amp;b, &amp;c);
+
+    s = (a + b + c) / <span class="t-num">2</span>;
+    area = <span class="t-fn">sqrt</span>(s * (s - a) * (s - b) * (s - c));
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Area = %.2f\n&quot;</span>, area);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Three sides: 3 4 5
+Area = 6.00</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>প্রশ্নে কোন তথ্য দেওয়া আছে তা দেখে সূত্র বাছাই করো: <strong>ভূমি ও উচ্চতা</strong> দেওয়া থাকলে ½ × ভূমি × উচ্চতা; <strong>তিন বাহু</strong> দেওয়া থাকলে হেরনের সূত্র, যেখানে s = (a + b + c) ÷ 2 এবং ক্ষেত্রফল = √(s(s−a)(s−b)(s−c))।</li><li>হেরনের সূত্রে <code>sqrt()</code> ব্যবহার হয় বলে <code>#include &lt;math.h&gt;</code> লাগে।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q3" aria-labelledby="q3-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৩</span>
+        <div>
+          <h3 id="q3-h"><span class="sr">প্রশ্ন ৩: </span>বর্গের ধারা (do-while)</h3>
+          <div class="chips"><span class="chip">do-while লুপ</span><span class="chip">ধারা</span></div>
+        </div>
+      </header>
+      <p class="q-text"><span class="math">100<sup>2</sup> + 90<sup>2</sup> + 80<sup>2</sup> + … + n<sup>2</sup></span> এই ধারাটির অ্যালগরিদম, flowchart ও Do while loop দ্বারা ধারাটির C ভাষার প্রোগ্রাম লিখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>n ইনপুট নাও (n হলো ধারার শেষ পদের ভিত্তি)।</li><li>i = 100 এবং sum = 0 ধরো।</li><li>sum = sum + i × i করো।</li><li>i = i − 10 করো।</li><li>i ≥ n হলে ধাপ ৪-এ ফিরে যাও, নইলে পরের ধাপে যাও।</li><li>sum প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 640" style="max-width:350px;min-width:297.5px" role="img" aria-label="বর্গের ধারার do-while ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q3" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q3)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q3)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q3)"/><polyline class="fc-line" points="175,282 175,316" marker-end="url(#ah-q3)"/><polyline class="fc-line" points="175,358 175,392" marker-end="url(#ah-q3)"/><polyline class="fc-line" points="60,434 25,434 25,223 175,223" marker-end="url(#ah-q3)"/><text class="fc-lbl" x="28" y="427" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="175,552 175,586" marker-end="url(#ah-q3)"/><polyline class="fc-line" points="175,476 175,510" marker-end="url(#ah-q3)"/><text class="fc-lbl" x="183" y="497" text-anchor="start">না</text><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট n</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">i = 100, sum = 0</text><rect class="fc-shape fc-proc" x="60" y="240" width="230" height="42"/><text class="fc-t" x="175" y="261" dy=".35em">sum = sum + i * i</text><rect class="fc-shape fc-proc" x="60" y="316" width="230" height="42"/><text class="fc-t" x="175" y="337" dy=".35em">i = i - 10</text><polygon class="fc-shape fc-dec" points="175,392 290,434 175,476 60,434"/><text class="fc-t" x="175" y="434" dy=".35em">i &gt;= n ?</text><polygon class="fc-shape fc-io" points="76,510 290,510 274,552 60,552"/><text class="fc-t" x="175" y="531" dy=".35em">প্রিন্ট sum</text><rect class="fc-shape fc-term" x="110" y="586" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="605" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q3">কপি</button></div><pre><code id="code-q3"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">int</span> n, i = <span class="t-num">100</span>;
+    <span class="t-kw">long</span> sum = <span class="t-num">0</span>;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Last base n: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%d&quot;</span>, &amp;n);
+
+    <span class="t-kw">do</span> {
+        sum = sum + i * i;
+        i = i - <span class="t-num">10</span>;
+    } <span class="t-kw">while</span> (i &gt;= n);
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Sum = %ld\n&quot;</span>, sum);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Last base n: 70
+Sum = 29400</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>ধারাটির পদগুলো ১০ করে কমছে, তাই <code>i = i - 10</code>। n = 70 দিলে যোগফল = 100² + 90² + 80² + 70² = 29400।</li><li>ধরে নেওয়া হয়েছে n ≤ 100 এবং n, 10-এর গুণিতক (যেমন 10, 20, … 100)।</li><li><strong>do-while-এর বৈশিষ্ট্য:</strong> শর্ত লুপের <em>শেষে</em> পরীক্ষা হয়, তাই লুপের ভেতরের অংশ অন্তত একবার চলবেই। ফ্লোচার্টে এ কারণেই শর্তের রম্বস লুপ-বডির নিচে বসে।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q4" aria-labelledby="q4-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৪</span>
+        <div>
+          <h3 id="q4-h"><span class="sr">প্রশ্ন ৪: </span>তিন সংখ্যার মধ্যে বৃহত্তম</h3>
+          <div class="chips"><span class="chip">শর্ত (if)</span></div>
+        </div>
+      </header>
+      <p class="q-text">তিনটি সংখ্যার মধ্যে সবচেয়ে বেশি তা নির্ণয়ের জন্য অ্যালগরিদম, flowchart, C-Programming লেখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>তিনটি সংখ্যা a, b, c ইনপুট নাও।</li><li>max = a ধরো।</li><li>b > max হলে max = b করো।</li><li>c > max হলে max = c করো।</li><li>max প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 758" style="max-width:350px;min-width:297.5px" role="img" aria-label="তিন সংখ্যার বৃহত্তমের ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q4" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q4)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q4)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q4)"/><polyline class="fc-line" points="175,324 175,358" marker-end="url(#ah-q4)"/><text class="fc-lbl" x="183" y="345" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="290,282 325,282 325,417 175,417" marker-end="url(#ah-q4)"/><text class="fc-lbl" x="295" y="275" text-anchor="start">না</text><polyline class="fc-line" points="175,400 175,434" marker-end="url(#ah-q4)"/><polyline class="fc-line" points="175,518 175,552" marker-end="url(#ah-q4)"/><text class="fc-lbl" x="183" y="539" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="290,476 325,476 325,611 175,611" marker-end="url(#ah-q4)"/><text class="fc-lbl" x="295" y="469" text-anchor="start">না</text><polyline class="fc-line" points="175,594 175,628" marker-end="url(#ah-q4)"/><polyline class="fc-line" points="175,670 175,704" marker-end="url(#ah-q4)"/><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট a, b, c</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">max = a</text><polygon class="fc-shape fc-dec" points="175,240 290,282 175,324 60,282"/><text class="fc-t" x="175" y="282" dy=".35em">b &gt; max ?</text><rect class="fc-shape fc-proc" x="60" y="358" width="230" height="42"/><text class="fc-t" x="175" y="379" dy=".35em">max = b</text><polygon class="fc-shape fc-dec" points="175,434 290,476 175,518 60,476"/><text class="fc-t" x="175" y="476" dy=".35em">c &gt; max ?</text><rect class="fc-shape fc-proc" x="60" y="552" width="230" height="42"/><text class="fc-t" x="175" y="573" dy=".35em">max = c</text><polygon class="fc-shape fc-io" points="76,628 290,628 274,670 60,670"/><text class="fc-t" x="175" y="649" dy=".35em">প্রিন্ট max</text><rect class="fc-shape fc-term" x="110" y="704" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="723" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q4">কপি</button></div><pre><code id="code-q4"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">int</span> a, b, c, max;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Enter three numbers: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%d %d %d&quot;</span>, &amp;a, &amp;b, &amp;c);
+
+    max = a;
+    <span class="t-kw">if</span> (b &gt; max)
+        max = b;
+    <span class="t-kw">if</span> (c &gt; max)
+        max = c;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Largest = %d\n&quot;</span>, max);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Enter three numbers: 12 45 30
+Largest = 45</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>কৌশল: প্রথম সংখ্যাকে আপাতত সবচেয়ে বড় ধরে নিয়ে বাকি দুটির সাথে একে একে তুলনা করা হয়েছে।</li><li>বিকল্প পদ্ধতি: nested if-else দিয়েও করা যায় (প্রথমে a ও b তুলনা, বিজয়ীকে c-এর সাথে তুলনা)। ফলাফল একই।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q5" aria-labelledby="q5-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৫</span>
+        <div>
+          <h3 id="q5-h"><span class="sr">প্রশ্ন ৫: </span>১ থেকে n পর্যন্ত যোগফল</h3>
+          <div class="chips"><span class="chip">for লুপ</span><span class="chip">ধারা</span></div>
+        </div>
+      </header>
+      <p class="q-text"><span class="math">1 + 2 + 3 + … + n</span> এই ধারাটির অ্যালগরিদম, flowchart ও C ভাষায় Program লেখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>n ইনপুট নাও।</li><li>sum = 0 এবং i = 1 ধরো।</li><li>i ≤ n হলে পরের ধাপে যাও, নইলে ধাপ ৭-এ যাও।</li><li>sum = sum + i করো।</li><li>i = i + 1 করো এবং ধাপ ৪-এ ফিরে যাও।</li><li>sum প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 658" style="max-width:350px;min-width:297.5px" role="img" aria-label="১ থেকে n পর্যন্ত যোগফল-এর ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q5" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q5)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q5)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q5)"/><polyline class="fc-line" points="175,400 175,434" marker-end="url(#ah-q5)"/><polyline class="fc-line" points="175,324 175,358" marker-end="url(#ah-q5)"/><text class="fc-lbl" x="183" y="345" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="175,476 175,494 25,494 25,282 60,282" marker-end="url(#ah-q5)"/><polyline class="fc-line" points="175,570 175,604" marker-end="url(#ah-q5)"/><polyline class="fc-line" points="290,282 325,282 325,549 290,549" marker-end="url(#ah-q5)"/><text class="fc-lbl" x="295" y="275" text-anchor="start">না</text><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট n</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">sum = 0, i = 1</text><polygon class="fc-shape fc-dec" points="175,240 290,282 175,324 60,282"/><text class="fc-t" x="175" y="282" dy=".35em">i &lt;= n ?</text><rect class="fc-shape fc-proc" x="60" y="358" width="230" height="42"/><text class="fc-t" x="175" y="379" dy=".35em">sum = sum + i</text><rect class="fc-shape fc-proc" x="60" y="434" width="230" height="42"/><text class="fc-t" x="175" y="455" dy=".35em">i = i + 1</text><polygon class="fc-shape fc-io" points="76,528 290,528 274,570 60,570"/><text class="fc-t" x="175" y="549" dy=".35em">প্রিন্ট sum</text><rect class="fc-shape fc-term" x="110" y="604" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="623" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q5">কপি</button></div><pre><code id="code-q5"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">int</span> n, i, sum = <span class="t-num">0</span>;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Enter n: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%d&quot;</span>, &amp;n);
+
+    <span class="t-kw">for</span> (i = <span class="t-num">1</span>; i &lt;= n; i++) {
+        sum = sum + i;
+    }
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Sum = %d\n&quot;</span>, sum);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Enter n: 10
+Sum = 55</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>যাচাইয়ের সূত্র: <strong>1 + 2 + … + n = n(n + 1) ÷ 2</strong>। n = 10 হলে 10 × 11 ÷ 2 = 55, মিলে যায়।</li><li>for লুপের তিন অংশ (শুরু; শর্ত; পরিবর্তন) ফ্লোচার্টে আলাদা তিন জায়গায় দেখা যায়: <em>i = 1</em> আগে, <em>i ≤ n</em> রম্বসে, <em>i = i + 1</em> বডির শেষে।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q6" aria-labelledby="q6-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৬</span>
+        <div>
+          <h3 id="q6-h"><span class="sr">প্রশ্ন ৬: </span>জোড় সংখ্যার যোগফল</h3>
+          <div class="chips"><span class="chip">for লুপ</span><span class="chip">ধারা</span></div>
+        </div>
+      </header>
+      <p class="q-text"><span class="math">2 + 4 + 6 + … + n</span> এই ধারাটির অ্যালগরিদম, flowchart ও C-Program লিখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>n ইনপুট নাও (n হলো শেষ জোড় সংখ্যা)।</li><li>sum = 0 এবং i = 2 ধরো।</li><li>i ≤ n হলে পরের ধাপে যাও, নইলে ধাপ ৭-এ যাও।</li><li>sum = sum + i করো।</li><li>i = i + 2 করো এবং ধাপ ৪-এ ফিরে যাও।</li><li>sum প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 658" style="max-width:350px;min-width:297.5px" role="img" aria-label="জোড় সংখ্যার যোগফল-এর ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q6" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q6)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q6)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q6)"/><polyline class="fc-line" points="175,400 175,434" marker-end="url(#ah-q6)"/><polyline class="fc-line" points="175,324 175,358" marker-end="url(#ah-q6)"/><text class="fc-lbl" x="183" y="345" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="175,476 175,494 25,494 25,282 60,282" marker-end="url(#ah-q6)"/><polyline class="fc-line" points="175,570 175,604" marker-end="url(#ah-q6)"/><polyline class="fc-line" points="290,282 325,282 325,549 290,549" marker-end="url(#ah-q6)"/><text class="fc-lbl" x="295" y="275" text-anchor="start">না</text><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট n</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">sum = 0, i = 2</text><polygon class="fc-shape fc-dec" points="175,240 290,282 175,324 60,282"/><text class="fc-t" x="175" y="282" dy=".35em">i &lt;= n ?</text><rect class="fc-shape fc-proc" x="60" y="358" width="230" height="42"/><text class="fc-t" x="175" y="379" dy=".35em">sum = sum + i</text><rect class="fc-shape fc-proc" x="60" y="434" width="230" height="42"/><text class="fc-t" x="175" y="455" dy=".35em">i = i + 2</text><polygon class="fc-shape fc-io" points="76,528 290,528 274,570 60,570"/><text class="fc-t" x="175" y="549" dy=".35em">প্রিন্ট sum</text><rect class="fc-shape fc-term" x="110" y="604" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="623" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q6">কপি</button></div><pre><code id="code-q6"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">int</span> n, i, sum = <span class="t-num">0</span>;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Enter last term n (even): &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%d&quot;</span>, &amp;n);
+
+    <span class="t-kw">for</span> (i = <span class="t-num">2</span>; i &lt;= n; i = i + <span class="t-num">2</span>) {
+        sum = sum + i;
+    }
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Sum = %d\n&quot;</span>, sum);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Enter last term n (even): 10
+Sum = 30</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>পার্থক্য শুধু দুটি জায়গায়: শুরু i = <strong>2</strong> এবং বৃদ্ধি i = i + <strong>2</strong>। বাকি সবই ৫ নম্বরের মতো।</li><li>যাচাইয়ের সূত্র: n জোড় হলে যোগফল = (n ÷ 2) × (n ÷ 2 + 1)। n = 10 হলে 5 × 6 = 30।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q7" aria-labelledby="q7-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৭</span>
+        <div>
+          <h3 id="q7-h"><span class="sr">প্রশ্ন ৭: </span>ফ্যাক্টরিয়াল নির্ণয়</h3>
+          <div class="chips"><span class="chip">for লুপ</span><span class="chip">গুণফল</span></div>
+        </div>
+      </header>
+      <p class="q-text">একটি পূর্ণসংখ্যার factorial নির্ণয়ের জন্য Algorithm, flowchart, C-Program লেখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>পূর্ণসংখ্যা n ইনপুট নাও।</li><li>fact = 1 এবং i = 1 ধরো।</li><li>i ≤ n হলে পরের ধাপে যাও, নইলে ধাপ ৭-এ যাও।</li><li>fact = fact × i করো।</li><li>i = i + 1 করো এবং ধাপ ৪-এ ফিরে যাও।</li><li>fact প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 658" style="max-width:350px;min-width:297.5px" role="img" aria-label="ফ্যাক্টরিয়াল নির্ণয়-এর ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q7" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q7)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q7)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q7)"/><polyline class="fc-line" points="175,400 175,434" marker-end="url(#ah-q7)"/><polyline class="fc-line" points="175,324 175,358" marker-end="url(#ah-q7)"/><text class="fc-lbl" x="183" y="345" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="175,476 175,494 25,494 25,282 60,282" marker-end="url(#ah-q7)"/><polyline class="fc-line" points="175,570 175,604" marker-end="url(#ah-q7)"/><polyline class="fc-line" points="290,282 325,282 325,549 290,549" marker-end="url(#ah-q7)"/><text class="fc-lbl" x="295" y="275" text-anchor="start">না</text><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="76,88 290,88 274,130 60,130"/><text class="fc-t" x="175" y="109" dy=".35em">ইনপুট n</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">fact = 1, i = 1</text><polygon class="fc-shape fc-dec" points="175,240 290,282 175,324 60,282"/><text class="fc-t" x="175" y="282" dy=".35em">i &lt;= n ?</text><rect class="fc-shape fc-proc" x="60" y="358" width="230" height="42"/><text class="fc-t" x="175" y="379" dy=".35em">fact = fact * i</text><rect class="fc-shape fc-proc" x="60" y="434" width="230" height="42"/><text class="fc-t" x="175" y="455" dy=".35em">i = i + 1</text><polygon class="fc-shape fc-io" points="76,528 290,528 274,570 60,570"/><text class="fc-t" x="175" y="549" dy=".35em">প্রিন্ট fact</text><rect class="fc-shape fc-term" x="110" y="604" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="623" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q7">কপি</button></div><pre><code id="code-q7"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">int</span> n, i;
+    <span class="t-kw">long</span> <span class="t-kw">long</span> fact = <span class="t-num">1</span>;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Enter n: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%d&quot;</span>, &amp;n);
+
+    <span class="t-kw">for</span> (i = <span class="t-num">1</span>; i &lt;= n; i++) {
+        fact = fact * i;
+    }
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;%d! = %lld\n&quot;</span>, n, fact);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Enter n: 5
+5! = 120</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>n! = 1 × 2 × 3 × … × n। যেমন 5! = 120।</li><li>যোগের ধারায় sum শুরু হয় 0 দিয়ে, কিন্তু গুণে <strong>fact শুরু হয় 1 দিয়ে</strong>; 0 দিয়ে শুরু করলে সব গুণফল 0 হয়ে যায়।</li><li>0! = 1: n = 0 হলে লুপ একবারও চলে না, তাই fact = 1-ই থেকে যায়। ঋণাত্মক সংখ্যার factorial হয় না।</li><li>ফল দ্রুত বড় হয় বলে <code>long long</code> ও <code>%lld</code> ব্যবহার করা হয়েছে (20! পর্যন্ত নিরাপদ)।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q8" aria-labelledby="q8-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৮</span>
+        <div>
+          <h3 id="q8-h"><span class="sr">প্রশ্ন ৮: </span>অ্যারে ব্যবহার করে দুটি সংখ্যার গড়</h3>
+          <div class="chips"><span class="chip">অ্যারে</span><span class="chip">for লুপ</span></div>
+        </div>
+      </header>
+      <p class="q-text">Array ব্যবহার করে দুটি সংখ্যার গড় নির্ণয়ের অ্যালগরিদম, flowchart, C-Program লেখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>দুই উপাদানের অ্যারে a[2] ঘোষণা করো।</li><li>sum = 0 এবং i = 0 ধরো।</li><li>i &lt; 2 হলে পরের ধাপে যাও, নইলে ধাপ ৭-এ যাও।</li><li>a[i] ইনপুট নাও এবং sum = sum + a[i] করো।</li><li>i = i + 1 করো এবং ধাপ ৪-এ ফিরে যাও।</li><li>avg = sum ÷ 2 গণনা করো।</li><li>avg প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 810" style="max-width:350px;min-width:297.5px" role="img" aria-label="অ্যারে ব্যবহার করে দুটি সংখ্যার গড়-এর ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q8" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,400 175,434" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,476 175,510" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,324 175,358" marker-end="url(#ah-q8)"/><text class="fc-lbl" x="183" y="345" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="175,552 175,570 25,570 25,282 60,282" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,646 175,680" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="175,722 175,756" marker-end="url(#ah-q8)"/><polyline class="fc-line" points="290,282 325,282 325,625 290,625" marker-end="url(#ah-q8)"/><text class="fc-lbl" x="295" y="275" text-anchor="start">না</text><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><rect class="fc-shape fc-proc" x="60" y="88" width="230" height="42"/><text class="fc-t" x="175" y="109" dy=".35em">অ্যারে a[2] ঘোষণা</text><rect class="fc-shape fc-proc" x="60" y="164" width="230" height="42"/><text class="fc-t" x="175" y="185" dy=".35em">sum = 0, i = 0</text><polygon class="fc-shape fc-dec" points="175,240 290,282 175,324 60,282"/><text class="fc-t" x="175" y="282" dy=".35em">i &lt; 2 ?</text><polygon class="fc-shape fc-io" points="76,358 290,358 274,400 60,400"/><text class="fc-t" x="175" y="379" dy=".35em">ইনপুট a[i]</text><rect class="fc-shape fc-proc" x="60" y="434" width="230" height="42"/><text class="fc-t" x="175" y="455" dy=".35em">sum = sum + a[i]</text><rect class="fc-shape fc-proc" x="60" y="510" width="230" height="42"/><text class="fc-t" x="175" y="531" dy=".35em">i = i + 1</text><rect class="fc-shape fc-proc" x="60" y="604" width="230" height="42"/><text class="fc-t" x="175" y="625" dy=".35em">avg = sum / 2</text><polygon class="fc-shape fc-io" points="76,680 290,680 274,722 60,722"/><text class="fc-t" x="175" y="701" dy=".35em">প্রিন্ট avg</text><rect class="fc-shape fc-term" x="110" y="756" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="775" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q8">কপি</button></div><pre><code id="code-q8"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">float</span> a[<span class="t-num">2</span>], sum = <span class="t-num">0</span>, avg;
+    <span class="t-kw">int</span> i;
+
+    <span class="t-kw">for</span> (i = <span class="t-num">0</span>; i &lt; <span class="t-num">2</span>; i++) {
+        <span class="t-fn">printf</span>(<span class="t-str">&quot;Enter number %d: &quot;</span>, i + <span class="t-num">1</span>);
+        <span class="t-fn">scanf</span>(<span class="t-str">&quot;%f&quot;</span>, &amp;a[i]);
+        sum = sum + a[i];
+    }
+
+    avg = sum / <span class="t-num">2</span>;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Average = %.2f\n&quot;</span>, avg);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Enter number 1: 10
+Enter number 2: 15
+Average = 12.50</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>অ্যারের সূচক (index) <strong>0 থেকে শুরু</strong> হয়। দুই উপাদানের অ্যারে a[2]-এর উপাদান a[0] ও a[1]; তাই শর্ত <code>i &lt; 2</code>।</li><li>গড় = সংখ্যাগুলোর যোগফল ÷ সংখ্যার পরিমাণ। দশমিক ফল পেতে <code>float</code> ব্যবহার করা হয়েছে।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q9" aria-labelledby="q9-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">৯</span>
+        <div>
+          <h3 id="q9-h"><span class="sr">প্রশ্ন ৯: </span>বৃত্তের ক্ষেত্রফল</h3>
+          <div class="chips"><span class="chip">সরল ক্রম</span></div>
+        </div>
+      </header>
+      <p class="q-text">বৃত্তের ক্ষেত্রফল নির্ণয়ের Algorithm, flowchart, C-Program লিখ?</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>PI = 3.14159 ধরো।</li><li>বৃত্তের ব্যাসার্ধ r ইনপুট নাও।</li><li>area = π × r × r গণনা করো।</li><li>area প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 350 446" style="max-width:350px;min-width:297.5px" role="img" aria-label="বৃত্তের ক্ষেত্রফলের ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q9" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="175,54 175,88" marker-end="url(#ah-q9)"/><polyline class="fc-line" points="175,130 175,164" marker-end="url(#ah-q9)"/><polyline class="fc-line" points="175,206 175,240" marker-end="url(#ah-q9)"/><polyline class="fc-line" points="175,282 175,316" marker-end="url(#ah-q9)"/><polyline class="fc-line" points="175,358 175,392" marker-end="url(#ah-q9)"/><rect class="fc-shape fc-term" x="110" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="35" dy=".35em">শুরু</text><rect class="fc-shape fc-proc" x="60" y="88" width="230" height="42"/><text class="fc-t" x="175" y="109" dy=".35em">PI = 3.14159</text><polygon class="fc-shape fc-io" points="76,164 290,164 274,206 60,206"/><text class="fc-t" x="175" y="185" dy=".35em">ইনপুট r</text><rect class="fc-shape fc-proc" x="60" y="240" width="230" height="42"/><text class="fc-t" x="175" y="261" dy=".35em">area = PI * r * r</text><polygon class="fc-shape fc-io" points="76,316 290,316 274,358 60,358"/><text class="fc-t" x="175" y="337" dy=".35em">প্রিন্ট area</text><rect class="fc-shape fc-term" x="110" y="392" width="130" height="38" rx="19"/><text class="fc-t" x="175" y="411" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q9">কপি</button></div><pre><code id="code-q9"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+<span class="t-pp">#define</span> PI <span class="t-num">3.14159</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">float</span> r, area;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Radius: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%f&quot;</span>, &amp;r);
+
+    area = PI * r * r;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Area = %.2f\n&quot;</span>, area);
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Radius: 7
+Area = 153.94</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li>সূত্র: ক্ষেত্রফল = πr²। C-তে ঘাত চিহ্ন নেই, তাই <code>r * r</code> লেখা হয়েছে।</li><li><code>#define PI 3.14159</code> দিয়ে π-কে ধ্রুবক হিসেবে রাখা হয়েছে; এতে মান বদলাতে হলে একজায়গায় বদলালেই চলে।</li></ul></section></div>
+      </details>
+    </article>
+    <article class="q" id="q10" aria-labelledby="q10-h">
+      <header class="q-head">
+        <span class="q-no" aria-hidden="true">১০</span>
+        <div>
+          <h3 id="q10-h"><span class="sr">প্রশ্ন ১০: </span>অধিবর্ষ (Leap Year) নির্ণয়</h3>
+          <div class="chips"><span class="chip">শর্ত (if-else if)</span></div>
+        </div>
+      </header>
+      <p class="q-text">একটি অধিবর্ষ (leap year) কিনা তা নির্ণয়ের Algorithm, flowchart, C-Program লেখ।</p>
+      <details class="sol">
+        <summary><span class="s-open">সমাধান দেখো</span><span class="s-close">সমাধান লুকাও</span></summary>
+        <div class="sol-body"><section class="part"><h4>অ্যালগরিদম</h4><ol class="steps"><li>শুরু করো।</li><li>বছর year ইনপুট নাও।</li><li>year ÷ 400 নিঃশেষে বিভাজ্য হলে ধাপ ৬-এ যাও।</li><li>নইলে year ÷ 100 নিঃশেষে বিভাজ্য হলে ধাপ ৭-এ যাও।</li><li>নইলে year ÷ 4 নিঃশেষে বিভাজ্য হলে ধাপ ৬-এ যাও, না হলে ধাপ ৭-এ যাও।</li><li>“Leap Year” প্রিন্ট করে ধাপ ৮-এ যাও।</li><li>“Not Leap Year” প্রিন্ট করো।</li><li>শেষ করো।</li></ol></section><section class="part"><h4>ফ্লোচার্ট</h4><figure class="fc"><svg class="fc-svg" viewBox="0 0 540 648" style="max-width:540px;min-width:459px" role="img" aria-label="অধিবর্ষ নির্ণয়ের ফ্লোচার্ট" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah-q10" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="fc-ah"/></marker></defs><polyline class="fc-line" points="200,54 200,88" marker-end="url(#ah-q10)"/><polyline class="fc-line" points="200,130 200,164" marker-end="url(#ah-q10)"/><polyline class="fc-line" points="200,248 200,282" marker-end="url(#ah-q10)"/><text class="fc-lbl" x="208" y="269" text-anchor="start">না</text><polyline class="fc-line" points="200,366 200,400" marker-end="url(#ah-q10)"/><text class="fc-lbl" x="208" y="387" text-anchor="start">না</text><polyline class="fc-line" points="200,484 200,518" marker-end="url(#ah-q10)"/><text class="fc-lbl" x="208" y="505" text-anchor="start">না</text><polyline class="fc-line" points="315,206 440,206 440,518" marker-end="url(#ah-q10)"/><text class="fc-lbl" x="322" y="199" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="315,442 440,442"/><text class="fc-lbl" x="322" y="435" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="85,324 28,324 28,539 85,539" marker-end="url(#ah-q10)"/><text class="fc-lbl" x="88" y="317" text-anchor="start">হ্যাঁ</text><polyline class="fc-line" points="200,560 200,594" marker-end="url(#ah-q10)"/><polyline class="fc-line" points="440,560 440,613 265,613" marker-end="url(#ah-q10)"/><rect class="fc-shape fc-term" x="135" y="16" width="130" height="38" rx="19"/><text class="fc-t" x="200" y="35" dy=".35em">শুরু</text><polygon class="fc-shape fc-io" points="101,88 315,88 299,130 85,130"/><text class="fc-t" x="200" y="109" dy=".35em">ইনপুট year</text><polygon class="fc-shape fc-dec" points="200,164 315,206 200,248 85,206"/><text class="fc-t" x="200" y="206" dy=".35em">year % 400 == 0 ?</text><polygon class="fc-shape fc-dec" points="200,282 315,324 200,366 85,324"/><text class="fc-t" x="200" y="324" dy=".35em">year % 100 == 0 ?</text><polygon class="fc-shape fc-dec" points="200,400 315,442 200,484 85,442"/><text class="fc-t" x="200" y="442" dy=".35em">year % 4 == 0 ?</text><polygon class="fc-shape fc-io" points="101,518 315,518 299,560 85,560"/><text class="fc-t" x="200" y="539" dy=".35em">প্রিন্ট: Not Leap Year</text><polygon class="fc-shape fc-io" points="371,518 525,518 509,560 355,560"/><text class="fc-t" x="440" y="539" dy=".35em">প্রিন্ট: Leap Year</text><rect class="fc-shape fc-term" x="135" y="594" width="130" height="38" rx="19"/><text class="fc-t" x="200" y="613" dy=".35em">শেষ</text></svg></figure></section><section class="part"><div class="code-head"><h4>C প্রোগ্রাম</h4><button type="button" class="copy" data-target="code-q10">কপি</button></div><pre><code id="code-q10"><span class="t-pp">#include &lt;stdio.h&gt;</span>
+
+<span class="t-kw">int</span> <span class="t-fn">main</span>() {
+    <span class="t-kw">int</span> year;
+
+    <span class="t-fn">printf</span>(<span class="t-str">&quot;Enter a year: &quot;</span>);
+    <span class="t-fn">scanf</span>(<span class="t-str">&quot;%d&quot;</span>, &amp;year);
+
+    <span class="t-kw">if</span> (year % <span class="t-num">400</span> == <span class="t-num">0</span>)
+        <span class="t-fn">printf</span>(<span class="t-str">&quot;%d is a leap year.\n&quot;</span>, year);
+    <span class="t-kw">else</span> <span class="t-kw">if</span> (year % <span class="t-num">100</span> == <span class="t-num">0</span>)
+        <span class="t-fn">printf</span>(<span class="t-str">&quot;%d is not a leap year.\n&quot;</span>, year);
+    <span class="t-kw">else</span> <span class="t-kw">if</span> (year % <span class="t-num">4</span> == <span class="t-num">0</span>)
+        <span class="t-fn">printf</span>(<span class="t-str">&quot;%d is a leap year.\n&quot;</span>, year);
+    <span class="t-kw">else</span>
+        <span class="t-fn">printf</span>(<span class="t-str">&quot;%d is not a leap year.\n&quot;</span>, year);
+
+    <span class="t-kw">return</span> <span class="t-num">0</span>;
+}
+</code></pre><div class="code-head"><h4>নমুনা ইনপুট-আউটপুট</h4></div><pre class="term"><code>Enter a year: 2024
+2024 is a leap year.</code></pre></section><section class="part note"><h4>মনে রাখো</h4><ul class="tips"><li><strong>নিয়ম:</strong> ৪০০ দিয়ে বিভাজ্য হলে অধিবর্ষ; নইলে ১০০ দিয়ে বিভাজ্য হলে অধিবর্ষ নয়; নইলে ৪ দিয়ে বিভাজ্য হলে অধিবর্ষ।</li><li>পরীক্ষা করে দেখো: 2000 → অধিবর্ষ, 1900 → নয় (১০০ দিয়ে বিভাজ্য, ৪০০ দিয়ে নয়), 2024 → অধিবর্ষ, 2023 → নয়।</li><li>শর্তের ক্রম গুরুত্বপূর্ণ: বড় (৪০০) থেকে ছোটর (৪) দিকে পরীক্ষা করতে হয়, নইলে 2000 সালের মতো বছর ভুল ফল দেবে।</li><li>এক লাইনে: <code>(y % 4 == 0 &amp;&amp; y % 100 != 0) || (y % 400 == 0)</code></li></ul></section></div>
+      </details>
+    </article>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
