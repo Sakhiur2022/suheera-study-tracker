@@ -22,21 +22,10 @@ main { grid-template-columns: minmax(0, 1fr); }
 
 /* সূচি */
 table.toc { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
-<<<<<<< HEAD
-.toc th, .toc td { padding: 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
-.toc thead th { padding: 9px 12px; }
-.toc a.cell { display: block; height: 100%; padding: 9px 12px; color: inherit; text-decoration: none; }
-.toc thead th { border-bottom: 2px solid var(--ink); font-weight: 600; }
-.toc tbody th a.cell { color: var(--blue); font-weight: 600; white-space: nowrap; }
-.toc tbody tr { cursor: pointer; transition: background 0.12s ease; }
-.toc tbody tr:hover { background: var(--blue-soft); }
-.toc tbody tr:hover a.cell { text-decoration: underline; }
-=======
 .toc th, .toc td { padding: 9px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
 .toc thead th { border-bottom: 2px solid var(--ink); font-weight: 600; }
 .toc tbody th a { color: var(--blue); font-weight: 600; text-decoration: none; white-space: nowrap; }
 .toc tbody th a:hover { text-decoration: underline; }
->>>>>>> 5ba30b3edddadddba3aa425fa16c7953f28973f3
 
 .chip {
   display: inline-block;
