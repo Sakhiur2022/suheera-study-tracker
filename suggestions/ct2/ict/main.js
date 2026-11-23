@@ -27,28 +27,12 @@
   window.addEventListener("hashchange", openFromHash);
   openFromHash();
 
-  // কোড কপি
+  // কোড কপি (shared clipboard Adapter: assets/js/core/clipboard.js)
   document.addEventListener("click", (e) => {
     const b = e.target.closest("button.copy");
     if (!b) return;
     const text = document.getElementById(b.dataset.target).textContent;
-    const done = () => {
-      b.textContent = "কপি হয়েছে";
-      setTimeout(() => (b.textContent = "কপি"), 1500);
-    };
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, () => {});
-    } else {
-      const ta = document.createElement("textarea");
-      ta.value = text;
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand("copy");
-        done();
-      } catch (_) {}
-      ta.remove();
-    }
+    Study.copyWithFeedback(b, text, { idleLabel: "কপি", doneLabel: "কপি হয়েছে" });
   });
 
   // প্রিন্টের আগে সব সমাধান খোলা
