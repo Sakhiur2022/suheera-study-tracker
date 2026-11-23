@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICT অধ্যায় ২ · লিখিত প্রশ্ন</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../assets/css/tracker.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="crumbs" aria-label="পথ"><ol>
+    <li><a href="../../../../index.html">হোম</a></li>
+    <li><a href="../../../index.html">অনুশীলন</a></li>
+    <li><a href="../../index.html">আইসিটি</a></li>
+    <li><a href="../index.html">২য় অধ্যায়</a></li>
+    <li aria-current="page">লিখিত প্রশ্ন</li>
+  </ol></nav>
+
+  <header class="top">
+    <h1>লিখিত প্রশ্ন প্র্যাকটিস</h1>
+    <p class="sub">আইসিটি · ২য় অধ্যায় · কম্যুনিকেশন সিস্টেমস ও নেটওয়ার্কিং · ২০২টি প্রশ্ন</p>
+    <div class="progress" aria-live="polite">
+      <div class="bar"><span id="bar-fill"></span></div>
+      <p id="progress-text"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel" aria-labelledby="sum-h">
+      <h2 id="sum-h">ধারণা (ক্লাস্টার) ও কঠিনতা</h2>
+      <p class="hint">সারিতে ক্লিক করলে নিচের তালিকা সেই ধারণায় ফিল্টার হবে।</p>
+      <div class="scroll">
+        <table id="matrix">
+          <thead>
+            <tr><th>কোড</th><th>ধারণা</th><th>সহজ</th><th>মাঝারি</th><th>কঠিন</th><th>অস্পষ্ট</th><th>মোট</th><th>গুরুত্ব</th></tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="cross-h">
+      <h2 id="cross-h">কঠিনতা ও গুরুত্ব</h2>
+      <div class="scroll">
+        <table id="cross"><thead></thead><tbody></tbody></table>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="list-h">
+      <h2 id="list-h">প্রশ্ন তালিকা</h2>
+      <form class="filters" id="filters" onsubmit="return false">
+        <label>খুঁজুন<input type="search" id="f-q" placeholder="প্রশ্ন নং, প্রশ্ন বা বোর্ড"></label>
+        <label>ধারণা<select id="f-cluster"></select></label>
+        <label>টপিক<select id="f-topic"></select></label>
+        <label>ধরন<select id="f-type"></select></label>
+        <label>কঠিনতা<select id="f-diff"></select></label>
+        <label>গুরুত্ব<select id="f-imp"></select></label>
+        <label>অবস্থা<select id="f-status"></select></label>
+        <label>সাজানো<select id="f-sort">
+          <option value="order">ফাইলের ক্রম</option>
+          <option value="imp">গুরুত্ব (বেশি আগে)</option>
+          <option value="count">ধারণা কতবার এসেছে (বেশি আগে)</option>
+        </select></label>
+        <button type="button" id="f-reset">ফিল্টার মুছুন</button>
+      </form>
+      <p id="count" class="hint" aria-live="polite"></p>
+      <div class="scroll">
+        <table id="problems">
+          <thead>
+            <tr>
+              <th>প্রশ্ন নং</th><th>প্রশ্ন</th><th>ধারণা</th><th>ধরন</th>
+              <th>কঠিনতা</th><th>গুরুত্ব</th><th>অবস্থা</th><th><span class="sr">উত্তর দেখো</span></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <p id="empty" class="empty" hidden>এই ফিল্টারে কোনো প্রশ্ন নেই। ফিল্টার মুছে আবার দেখুন।</p>
+    </section>
+
+    <details class="fold" open>
+      <summary>শুরুতে পড়ো</summary>
+      <h3>টপিক ও পড়ার ক্রম</h3>
+      <div class="scroll"><table class="plain"><thead><tr><th>টপিক</th><th>মোট</th><th>পড়ার ক্রম</th><th>জ্ঞান</th><th>অনুধাবন</th><th>প্রয়োগ</th><th>উচ্চতর</th><th>গুরুত্ব</th><th>কী পড়বে</th></tr></thead><tbody id="ov-topics"></tbody></table></div>
+      <h3>প্রশ্নের ধরন ও উত্তর কত বড় হবে</h3>
+      <div class="scroll"><table class="plain"><thead><tr><th>ধরন</th><th>মোট</th><th>কঠিনতা</th><th>কত বড় লিখবে</th></tr></thead><tbody id="ov-types"></tbody></table></div>
+      <h3>গুরুত্বপূর্ণ কিন্তু সহজ: আগে এগুলো শেষ করো</h3><div id="ov-first"></div>
+      <h3>সৃজনশীল প্রশ্ন লেখার কৌশল (ক=১, খ=২, গ=৩, ঘ=৪ নম্বর)</h3><div id="ov-tips"></div>
+      <h3>শিক্ষকের কাছে বা বইয়ে যাচাই করে নাও</h3><div id="ov-verify"></div>
+    </details>
+
+    <details class="fold">
+      <summary>সংজ্ঞা — একদম মুখস্থ (ক-অংশ)</summary>
+      <div class="scroll"><table class="plain"><thead><tr><th>ক্রম</th><th>বিষয়</th><th>মুখস্থ উত্তর</th><th>টিপ</th></tr></thead><tbody id="defs"></tbody></table></div>
+    </details>
+
+    <details class="fold">
+      <summary>অনুধাবন — ২–৩ লাইনের উত্তর (খ-অংশ)</summary>
+      <div class="scroll"><table class="plain"><thead><tr><th>ক্রম</th><th>প্রশ্ন</th><th>মুখস্থ উত্তর</th><th>কী-ওয়ার্ড</th></tr></thead><tbody id="und"></tbody></table></div>
+    </details>
+
+    <details class="fold">
+      <summary>বর্ণনা — গঠন, সুবিধা ও অসুবিধা (গ-অংশ)</summary>
+      <div id="desc"></div>
+    </details>
+
+    <details class="fold">
+      <summary>তুলনা ও মতামত — ছক মুখস্থ (ঘ-অংশ)</summary>
+      <div id="cmp"></div>
+    </details>
+
+    <details class="fold">
+      <summary>সংখ্যা, স্ট্যান্ডার্ড ও পূর্ণরূপ — এক নজরে</summary>
+      <div class="scroll"><table class="plain"><thead><tr><th>ক্রম</th><th>বিষয়</th><th>মনে রাখার তথ্য</th></tr></thead><tbody id="facts"></tbody></table></div>
+    </details>
+
+    <section class="panel notes">
+      <h2>জেনে রাখো</h2>
+      <ul>
+        <li>গুরুত্ব = ধারণাটি থেকে কতবার প্রশ্ন এসেছে (১০+ অত্যন্ত গুরুত্বপূর্ণ, ৫–৯ গুরুত্বপূর্ণ, ৪ বা কম কম গুরুত্বপূর্ণ)। শুধু এই ফাইলের ২০২টি প্রশ্ন গুনে ঠিক করা।</li>
+        <li>৬টি প্রশ্ন এ অধ্যায়ের বাইরের বা অস্পষ্ট, তাই কঠিনতা ও গুরুত্বে আলাদা দেখানো হয়েছে।</li>
+        <li>“উত্তর দেখো”-তে মুখস্থ উত্তর শুধু সেই প্রশ্নের জন্য আছে যার উত্তর শিটে সরাসরি মিলেছে। বাকিগুলোর জন্য ধারণার টিপ, লেখার নিয়ম ও সংশ্লিষ্ট বর্ণনা বা ছক দেখানো হয়।</li>
+        <li>ছবি-নির্ভর প্রশ্নের (চিত্র) বিবরণ সংক্ষিপ্ত, তাই চিত্র দেখে উত্তর বসিয়ে নিও।</li>
+        <li>অবস্থা এই ব্রাউজারে সংরক্ষিত থাকে।</li>
+      </ul>
+      <a class="dl-link" href="ICT_Chapter2_Revision_bn.xlsx" download>মূল এক্সেল শিট ডাউনলোড করো</a>
+    </section>
+  </main>
+
+  <dialog id="code-modal" aria-labelledby="m-title">
+    <div class="m-head">
+      <div class="m-headtext">
+        <h2 id="m-title"></h2>
+        <p id="m-meta" class="m-metaline"></p>
+      </div>
+      <button type="button" id="m-close" class="m-close" aria-label="বন্ধ করো">✕</button>
+    </div>
+    <div class="m-body">
+      <div class="d-block"><h3>প্রশ্ন</h3><p id="m-stmt"></p></div>
+      <div class="d-block" id="m-ans"></div>
+      <div class="d-block" id="m-rule"></div>
+      <div class="d-block" id="m-concept"></div>
+      <div class="d-block" id="m-extra"></div>
+    </div>
+  </dialog>
+
+  <script src="../../../../assets/js/core/constants.js"></script>
+  <script src="../../../../assets/js/core/dom.js"></script>
+  <script src="../../../../assets/js/core/observable.js"></script>
+  <script src="../../../../assets/js/core/storage.js"></script>
+  <script src="../../../../assets/js/core/markdown.js"></script>
+  <script src="../../../../assets/js/core/clipboard.js"></script>
+  <script src="../../../../assets/js/tracker/status-store.js"></script>
+  <script src="../../../../assets/js/tracker/strategies.js"></script>
+  <script src="../../../../assets/js/tracker/progress.js"></script>
+  <script src="../../../../assets/js/tracker/matrix.js"></script>
+  <script src="../../../../assets/js/tracker/list.js"></script>
+  <script src="../../../../assets/js/tracker/controls.js"></script>
+  <script src="../../../../assets/js/tracker/create-tracker.js"></script>
+  <script src="data.js"></script>
+  <script src="model.js"></script>
+  <script src="views.js"></script>
+  <script src="answer-modal.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
