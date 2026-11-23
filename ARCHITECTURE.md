@@ -52,4 +52,4 @@ practice/.../<page>/
 ## Things to keep stable
 
 The `storageKey` values (`ellipse-tracker-status-v1`, `conics-tracker-status-v1`,
-`c-programming-tracker-status-v1`) hold people's saved progress. Do not rename them.
+`c-programming-tracker-status-v1`, `ict-ch2-written-questions-status-v1`) hold people's saved progress. Do not rename them.
